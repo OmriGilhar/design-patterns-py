@@ -1,12 +1,12 @@
-from creational.abstruct_factory.abstract_product_a import AbstractProductA
-from creational.abstruct_factory.abstract_product_b import AbstractProductB
+from creational.abstract_factory.abstract_product_a import AbstractProductGreasy
+from creational.abstract_factory.abstract_product_b import AbstractProductLight
 
 
-class ConcreteProductB2(AbstractProductB):
+class ConcreteProductLight(AbstractProductLight):
     def useful_function_b(self) -> str:
         return "The result of the product B2."
 
-    def another_useful_function_b(self, collaborator: AbstractProductA):
+    def another_useful_function_b(self, collaborator: AbstractProductGreasy):
         """
         The variant, Product B2, is only able to work correctly with the
         variant, Product A2. Nevertheless, it accepts any instance of

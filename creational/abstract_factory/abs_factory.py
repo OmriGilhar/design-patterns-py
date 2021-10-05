@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
-from creational.abstruct_factory.abstract_product_a import AbstractProductA
-from creational.abstruct_factory.abstract_product_b import AbstractProductB
+from creational.abstract_factory.abstract_product_a import \
+    AbstractProductGreasy
+from creational.abstract_factory.abstract_product_b import AbstractProductLight
 
 
 class AbstractFactory(ABC):
@@ -13,9 +14,9 @@ class AbstractFactory(ABC):
     another.
     """
     @abstractmethod
-    def create_product_a(self) -> AbstractProductA:
+    def create_product_greasy(self) -> AbstractProductGreasy:
         pass
 
     @abstractmethod
-    def create_product_b(self) -> AbstractProductB:
+    def create_product_light(self) -> AbstractProductLight:
         pass

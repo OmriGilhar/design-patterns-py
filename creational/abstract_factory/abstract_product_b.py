@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
-from creational.abstruct_factory.abstract_product_a import AbstractProductA
+from creational.abstract_factory.abstract_product_a import AbstractProductGreasy
 
 
-class AbstractProductB(ABC):
+class AbstractProductLight(ABC):
     """
     Here's the the base interface of another product. All products can interact
     with each other, but proper interaction is possible only between products of
@@ -16,7 +16,7 @@ class AbstractProductB(ABC):
         pass
 
     @abstractmethod
-    def another_useful_function_b(self, collaborator: AbstractProductA) -> None:
+    def another_useful_function_b(self, collaborator: AbstractProductGreasy) -> None:
         """
         ...but it also can collaborate with the ProductA.
 

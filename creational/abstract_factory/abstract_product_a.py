@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class AbstractProductA(ABC):
+class AbstractProductGreasy(ABC):
     """
     Each distinct product of a product family should have a base interface. All
     variants of the product must implement this interface.
