@@ -1,4 +1,5 @@
-from creational.abstract_factory.abstract_product_a import AbstractProductGreasy
+from creational.abstract_factory.abstract_product_a import \
+    AbstractProductGreasy
 
 
 class ConcreteProductGreasyPasta(AbstractProductGreasy):

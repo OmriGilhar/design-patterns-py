@@ -1,5 +1,6 @@
-from creational.abstract_factory.abs_factory import AbstractFactory
-from creational.abstract_factory.abstract_product_a import AbstractProductGreasy
+from creational.abstract_factory.abs_factory import FoodAbstractFactory
+from creational.abstract_factory.abstract_product_a import \
+    AbstractProductGreasy
 from creational.abstract_factory.abstract_product_b import AbstractProductLight
 from creational.abstract_factory.concrete_product_a2 import \
     ConcreteProductGreasyPasta
@@ -7,7 +8,7 @@ from creational.abstract_factory.concrete_product_b2 import \
     ConcreteProductLight
 
 
-class ConcreteHutFactory(AbstractFactory):
+class ConcreteHutFactoryFood(FoodAbstractFactory):
     """
     Each Concrete Factory has a corresponding product variant.
     """

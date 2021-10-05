@@ -1,10 +1,11 @@
-from creational.abstract_factory.abs_factory import AbstractFactory
+from creational.abstract_factory.abs_factory import FoodAbstractFactory
 from creational.abstract_factory.concrete_factory_1 import \
-    ConcreteDominosFactory
-from creational.abstract_factory.concrete_factory_2 import ConcreteHutFactory
+    ConcreteDominosFactoryFood
+from creational.abstract_factory.concrete_factory_2 import \
+    ConcreteHutFactoryFood
 
 
-def client_code(pizza_provider: AbstractFactory) -> None:
+def client_code(pizza_provider: FoodAbstractFactory) -> None:
     """
     The client code works with factories and products only through abstract
     types: AbstractFactory and AbstractProduct. This lets you pass any factory
@@ -22,9 +23,9 @@ if __name__ == "__main__":
     The client code can work with any concrete factory class.
     """
     print("Client: Testing client code with the first factory type:")
-    client_code(ConcreteDominosFactory())
+    client_code(ConcreteDominosFactoryFood())
 
     print("\n")
 
     print("Client: Testing the same client code with the second factory type:")
-    client_code(ConcreteHutFactory())
+    client_code(ConcreteHutFactoryFood())

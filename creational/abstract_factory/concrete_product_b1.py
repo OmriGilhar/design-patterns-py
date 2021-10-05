@@ -1,4 +1,5 @@
-from creational.abstract_factory.abstract_product_a import AbstractProductGreasy
+from creational.abstract_factory.abstract_product_a import \
+    AbstractProductGreasy
 from creational.abstract_factory.abstract_product_b import AbstractProductLight
 
 
@@ -12,6 +13,9 @@ class ConcreteProductLight(AbstractProductLight):
     argument.
     """
 
-    def another_useful_function_b(self, collaborator: AbstractProductGreasy) -> str:
+    def another_useful_function_b(
+            self,
+            collaborator: AbstractProductGreasy
+    ) -> str:
         result = collaborator.useful_function_a()
         return f"The result of the B1 collaborating with the ({result})"
